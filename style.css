@@ -3,6 +3,8 @@ html {
   font-size: 12px;
 }
 
+/*---------------BODY---------------*/
+
 body {
   font: 2.75em/2.5em 'Just Me Again Down Here', cursive;
   color: #222;
@@ -11,6 +13,15 @@ body {
   background-color: white;
 }
 
+.page {
+  width: 85%;
+  max-width: 960px;
+  margin: 50px auto;
+  text-align: center;
+  background-color: #586D5A;
+  border-radius: 10px;
+  padding: 15px;
+}
 h1 {
   font-size: 2.75em;
   margin: 0px;
@@ -37,15 +48,6 @@ a:link {
 a:visited {
   color: #b68480;
   text-decoration: none;
-}
-.page {
-  width: 85%;
-  max-width: 960px;
-  margin: 50px auto;
-  text-align: center;
-  background-color: #586D5A;
-  border-radius: 10px;
-  padding: 15px;
 }
 
 blockquote {
@@ -88,6 +90,8 @@ blockquote:after { content: '"'; }
   width: 100%;
 }
 
+/*---------------FOOTER---------------*/
+
 footer {
   margin-top: 75px;
 }
@@ -95,24 +99,30 @@ footer p {
   font-size: .65em;
   line-height: 1.1em;
 }
+
 /*--------------Tablet styles here-------------- */
 
 @media all and (min-width:768px) {
+
+.page {
+  max-width: 700px;
+}
+
+.third-width {
+  float: left;
+  width: 33.33%;
+  text-align: center;
+  justify-content: center;
+}
+
+/*---------------Desktop styles here--------------- */
+@media all and (min-width:1200px) {
+
+.page {
+  max-width: 900px;
+}
 
 .half-width {
   float: left;
   width: 50%;
 }
-
-.third-width {
-  float: left;
-  width: 31%;
-  text-align: center;
-  justify-content: center;
-}
-
-
-/*---------------Desktop styles here--------------- */
-@media all and (min-width:1200px) {
-
-  /*---------------BASE STYLES---------------*/
